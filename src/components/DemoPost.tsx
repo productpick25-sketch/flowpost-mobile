@@ -21,7 +21,6 @@ export function DemoPost({ post }: { post: (typeof demoPosts)[number] }) {
             <p className="truncate font-semibold">{post.author.display_name}</p>
             <p className="truncate text-xs text-muted-foreground">@{post.author.username}</p>
           </div>
-          <span className="text-xs font-semibold text-primary">Demo post</span>
         </div>
         <p className="text-sm leading-snug"><span className="mr-2 font-semibold">{post.author.username}</span>{post.caption}</p>
       </header>

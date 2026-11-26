@@ -36,7 +36,7 @@ export function DemoPost({ post }: { post: (typeof demoPosts)[number] }) {
         <p className="text-sm font-semibold">{post.likes + Number(liked)} likes</p>
         {comments.map((text, i) => <p key={i} className="break-words text-sm"><span className="font-semibold">You </span>{text}</p>)}
         {commenting && <form className="flex gap-2 border-t border-border pt-3" onSubmit={(e) => { e.preventDefault(); if (!comment.trim()) return; setComments([...comments, comment.trim()]); setComment(""); }}>
-          <input aria-label="Demo comment" placeholder="Add a comment…" value={comment} onChange={(e) => setComment(e.target.value)} maxLength={2000} className="min-w-0 flex-1 bg-transparent text-sm outline-none" />
+          <input aria-label="Demo tweet" placeholder="Add a tweet…" value={comment} onChange={(e) => setComment(e.target.value)} maxLength={2000} className="min-w-0 flex-1 bg-transparent text-sm outline-none" />
           <Button variant="ghost" type="submit" disabled={!comment.trim()}>Post</Button>
         </form>}
       </div>

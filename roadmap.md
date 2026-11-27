@@ -1,4 +1,5 @@
 # Tasks
+- [ ] Investigate the missing header in the installed APK and deliver a rebuilt package.
 - [x] Enable email sign-in.
 - [x] Restore missing app tables and clear preview build errors.
 - [x] Verify bundled screens show the logo and working menu at phone sizes and with status-bar spacing.

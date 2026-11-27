@@ -42,6 +42,10 @@
 }
 
 :root {
+  --app-safe-top: var(--safe-area-inset-top, env(safe-area-inset-top, 0px));
+  --app-safe-bottom: var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px));
+  --app-safe-left: var(--safe-area-inset-left, env(safe-area-inset-left, 0px));
+  --app-safe-right: var(--safe-area-inset-right, env(safe-area-inset-right, 0px));
   --radius: 0.9rem;
   --media: oklch(0.08 0 0);
   --media-foreground: oklch(0.99 0 0);
@@ -81,7 +85,6 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    padding-top: env(safe-area-inset-top, 0px);
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0; }
 }

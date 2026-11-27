@@ -1,5 +1,6 @@
 # Tasks
 - [x] Enable email sign-in.
 - [x] Restore missing app tables and clear preview build errors.
-- [ ] Verify logo and menu remain visible in the bundled Android app.
-- [ ] Build and deliver an updated APK using this project's backend.
+- [x] Verify bundled screens show the logo and working menu at phone sizes and with status-bar spacing.
+- [x] Build and deliver an updated APK using this project's backend.
+- [ ] Verify installation and signed-in navigation on a real Android phone (requires user's device; emulator unavailable and test sign-in declined).

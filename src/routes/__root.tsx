@@ -95,7 +95,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
         <Header />
-        <main className="min-h-[calc(100vh-4rem)] pb-[calc(4rem+env(safe-area-inset-bottom))] sm:pb-0">
+        <main className="min-h-[calc(100vh-4rem)] pb-[calc(4rem+var(--app-safe-bottom))] sm:pb-0">
           <Outlet />
         </main>
         <Toaster position="top-center" />

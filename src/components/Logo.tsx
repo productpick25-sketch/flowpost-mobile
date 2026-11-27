@@ -16,9 +16,9 @@ export function Logo({ size = 36 }: { size?: number }) {
 
 export function Wordmark() {
   return (
-    <span className="flex items-center gap-2">
+    <span className="flex min-w-0 items-center gap-1.5 sm:gap-2">
       <Logo />
-      <span className="hidden font-display text-lg font-black tracking-tight sm:inline">
+      <span className="truncate font-display text-sm font-black sm:text-lg">
         SAC<span className="text-primary">.</span>Community
       </span>
     </span>

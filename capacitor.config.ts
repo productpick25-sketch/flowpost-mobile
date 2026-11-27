@@ -5,5 +5,6 @@ const config: CapacitorConfig = {
   webDir: 'dist/client',
   android: { allowMixedContent: false },
   ios: { contentInset: 'automatic' },
+  plugins: { SystemBars: { insetsHandling: 'css', initialViewportFitValueHint: 'cover', style: 'DARK' } },
 };
 export default config;

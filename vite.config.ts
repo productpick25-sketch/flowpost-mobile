@@ -14,5 +14,7 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // APK builds bundle a local app shell; normal preview/publish builds keep SSR.
+    ...(process.env['SAC_MOBILE_BUILD'] === '1' ? { spa: { enabled: true, prerender: { outputPath: '/index' } } } : {}),
   },
 });

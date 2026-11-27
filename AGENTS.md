@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Restore app tables through Lovable's migration tool and regenerate database types; never mask missing tables with untyped clients.
+- Keep the mobile header menu shared with desktop and visible while signed out so navigation does not depend on session hydration.
+- Build APKs from bundled TanStack SPA output with `SAC_MOBILE_BUILD=1` in a temporary packaging workspace; keep normal preview/publish builds server-rendered.

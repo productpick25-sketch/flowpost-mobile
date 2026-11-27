@@ -58,6 +58,7 @@ export function Header() {
   if (pathname.startsWith("/create")) return null;
 
   return (
+    <>
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 pt-[var(--app-safe-top)] pl-[var(--app-safe-left)] pr-[var(--app-safe-right)] backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-3 sm:px-5">
         <Link to="/" className="min-w-0 flex-1 sm:flex-none" aria-label="SAC Community home"><Wordmark /></Link>
@@ -96,9 +97,10 @@ export function Header() {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
+    </header>
       {userId && (
         <nav aria-label="Primary navigation" className="fixed inset-x-0 bottom-0 z-40 flex items-center justify-around border-t border-border/60 bg-background/95 px-2 pt-1.5 pb-[calc(var(--app-safe-bottom)+0.375rem)] backdrop-blur-xl sm:hidden">{nav}</nav>
       )}
-    </header>
+    </>
   );
 }

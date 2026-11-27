@@ -31,4 +31,5 @@ use the editor.
 
 - Restore app tables through Lovable's migration tool and regenerate database types; never mask missing tables with untyped clients.
 - Keep the mobile header menu shared with desktop and visible while signed out so navigation does not depend on session hydration.
+- Render the fixed mobile bottom navigation as a sibling of the header, never inside its backdrop-filter; filtered ancestors trap fixed positioning and cover the logo/menu.
 - Build APKs from bundled TanStack SPA output with `SAC_MOBILE_BUILD=1` in a temporary packaging workspace; keep normal preview/publish builds server-rendered.
